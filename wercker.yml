@@ -11,7 +11,7 @@ push:
     # Push to public docker repo Container Registry (CR)
     - internal/docker-push:
         tag: latest
-        repository: wcr.io/pravarsh123/rest-creditscore
+        repository: $CR_REPOSITORY
         cmd: java -jar  /pipeline/source/target/loan-0.1.0.war
 
 
